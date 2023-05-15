@@ -1,0 +1,120 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unhar travel car</title>
+ 
+ <!-- My icon --> 
+   <script src="https://unpkg.com/feather-icons"></script>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body> 
+ 
+ <!-- navbar start -->
+ <nav class="navbar">
+   <a href="index.html" class="navbar-logo">Unhar<span>travel</span>.</a>
+   
+   <div class="navbar-nav">
+     <a href="index.html">Home</a>
+     <a href="index.html">tentang kami</a>
+     <a href="index.html">pemesanan</a>
+     <a href="index.html">Kontak</a>
+   </div>
+   
+   <div class="navbar-extra">
+     <a href="#" id="Hamburger-menu"><i data-feather="menu"></i></a> 
+     
+   </div>
+   
+ </nav>
+<!-- navbar end -->
+
+ <!-- penyewaan -->
+<section class="sewa">
+  <h2> <span><center>MEDAN - RANTAUPRAPAT / RANTAUPRAPAT - MEDAN </center></span></h2><br>
+  <h3> <span><center>NEW AVANZA - INNOVA REBORN - INNNOVA GRAND </center></span></h3><br>
+  <div class="row">
+    <div class="sewa-img">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="AVZINNOVA.png" 
+      alt="Avanza">
+      <div class="content"><br>
+        
+       <h3> Spesifikasi </h3>
+       <p>Toyota Avanza tersedia dalam pilihan mesin Bensin di Indonesia MPV baru dari Toyota hadir dalam 10 varian. Bicara soal spesifikasi mesin Toyota Avanza, ini ditenagai dua pilihan mesin Bensin berkapasitas 1496 cc. Avanza tersedia dengan transmisi Manual and CVT tergantung variannya. Avanza adalah MPV 7 seater dengan panjang 4395 mm, lebar 1730 mm, wheelbase 2750 mm. serta ground clearance 195 mm.</p><br>
+       
+       <p>Jenis Transmisi : Manual <br>
+          kapasitas      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    : 7 orang <br>
+          Harga         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;     : Rp.170.000 / Orang </p><br><br>
+       
+       <!--pemessanan-->
+<section id="pemesanan" class="pemesanan">
+  <table Border="0" height="80">
+
+<p>
+  Nama &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" id="nama">
+</p><br>
+
+<p>
+  No Hp &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input type="number" id="nohp">
+</p><br>
+
+<p>
+  Alamat  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" id="alamat">
+</p><br>
+
+<p>
+  Tujuan  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" id="tujuan">
+</p><br>
+
+  <tr>
+  <td> Jumlah Orang &nbsp; :</td>
+ <td> <input type="number" id="second"></td>
+  </tr>
+
+
+  <tr>
+    <td colspan="2"><center>
+      &nbsp; &nbsp;<button onclick="add()">Total Biaya</button></center>
+      </td>
+  </tr>
+  
+  <tr>
+   <td>Jumlah (Rp) &nbsp; &nbsp; :</td>
+   <td><input id="answer"></td>
+   </tr>
+ </table>
+</section>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button onclick="submitdata()">Submit</button>
+</p>
+       
+       
+       
+      
+         
+       </table>
+  </div>
+  
+        
+        
+<!-- feather-icons -->
+ <script>
+  function submitdata() {
+    var nama = document.getElementById("nama").value;
+    var nohp = document.getElementById("nohp").value;
+    var alamat = document.getElementById("alamat").value;
+    var tujuan = document.getElementById("tujuan").value;
+    var total = document.getElementById("answer").value;
+    alert("Nama : " + nama + "\n No.HP : " + nohp + "\n Alamat : "  + alamat + "\n Tujuan : " + tujuan + "\n Total Bayar : " + total);
+  }
+  
+      feather.replace()
+    </script>
+    
+ <!-- java script -->
+ <script src="script.js"></script>
+ 
+ 
+ </body>
+ </html>
